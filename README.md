@@ -109,8 +109,8 @@ Acceptance Criteria
 -----
 
 1. The web app should be successfully connected to a PostgreSQL database. A local connection to a database on your local computer is fine.
-2. There should be no use of mock data throughout the app. The data structure of the mock data per controller should be kept unmodified when satisfied by real data.
-3. The application should behave just as before with mock data, but now uses real data from a real backend server, with real search functionality. For example:
+2. There should be no use of  data throughout the app. The data structure of the mock data per controller should be kept unmodified when satisfied by real data.
+3. The application should behave just as before with mock data, but now uses real data from a real backend server, with reamockl search functionality. For example:
   * when a user submits a new artist record, the user should be able to see it populate in /artists, as well as search for the artist by name and have the search return results.
   * I should be able to go to the URL `/artist/<artist-id>` to visit a particular artist’s page using a unique ID per artist, and see real data about that particular artist.
   * Venues should continue to be displayed in groups by city and state.
@@ -147,13 +147,21 @@ cd FSND/projects/01_fyyur/starter_code
 git remote -v 
 git remote remove origin 
 git remote add origin <https://github.com/<USERNAME>/<REPO_NAME>.git>
+git remote add origin git@github.com:User/UserRepo.git
 git branch -M master
 ```
 Once you have finished editing your code, you can push the local repository to your Github account using the following commands.
 ```
-git add . --all   
-git commit -m "your comment"
+""" these commands should be entered once 
+git init
+git config user.name "someone"
+git config user.email "someone@someplace.com"
+git add *
+git commit -m "some init msg"
 git push -u origin master
+user : TQ155 
+password: TokenCreated in developer settings
+
 ```
 
 3. **Initialize and activate a virtualenv using:**
